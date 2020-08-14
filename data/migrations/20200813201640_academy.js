@@ -5,8 +5,7 @@ exports.up = function(knex) {
         .createTable('academy', tbl => {
             tbl.increments();
             tbl.string('character', 255)
-                .notNullable()
-                .unique();
+                .notNullable();
         })
   );
 };
